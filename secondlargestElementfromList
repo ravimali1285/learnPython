@@ -1,0 +1,21 @@
+if __name__ == '__main__':
+    print("Enter number of elements in the list with spaces: ")
+    n = int(input())
+    print("Enter array elements with ,")
+    arr = list(map(int, input().split()))
+    arr.sort()
+    large = max(arr)
+    count =0
+    arr.remove(max(arr))
+    for i in range(n-1):
+        if arr[i] == large:
+            count +=1
+        #print(arr[i])
+    #print(f" number of iteration {count}")
+    if count == 1:
+        arr.remove(max(arr))
+        print(f" Second largest element is {max(arr)}")
+    else:
+        for j in range(count):
+            arr.remove(max(arr))
+        print(f" Second largest element is {max(arr)}")
