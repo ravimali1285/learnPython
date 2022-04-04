@@ -1,0 +1,7 @@
+##Heads or tails
+flip_a_coin = random.randint(0, 1)
+#print(flip_a_coin)
+if flip_a_coin == 1:
+  print("Heads")
+else:
+  print("Tails")
